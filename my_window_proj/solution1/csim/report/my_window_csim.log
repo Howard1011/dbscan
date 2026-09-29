@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../my_window_tb.cpp in debug mode
+   Compiling ../../../../my_window.cpp in debug mode
+   Generating csim.exe
+  wrote labels_event500.dat
+event 500: clusters=600  exact_match=FAIL  partition_match=PASS  mismatches=598
+  wrote labels_event501.dat
+event 501: clusters=591  exact_match=FAIL  partition_match=PASS  mismatches=598
+  wrote labels_event502.dat
+event 502: clusters=600  exact_match=FAIL  partition_match=PASS  mismatches=596
+ALL EVENTS PASS (partition_match)
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
