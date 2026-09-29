@@ -18,7 +18,6 @@ A window-based clustering (DBSCAN-like) accelerator using `ap_fixed<8,4>` arithm
 | `data/golden_event500~502.dat` | Expected cluster labels (one integer per line) |
 | `data/labels_event500~502.dat` | Reference output (overwritten when the testbench runs) |
 | `data/pca_mean.dat` / `data/pca_components.dat` | PCA mean vector (12) and projection matrix (8×12). Used only by the Python reference; the same values are hard-coded in `my_window.cpp` |
-| `clustering_window_emb_apfix.ipynb` | Software reference implementation |
 | `ALGORITHM.md` | Algorithm specification and stability analysis |
 | `RESOURCE_TIMING_SUMMARY.md` | Resource usage and timing breakdown |
 | `my_window_proj/` | Vitis HLS project output (csim, synthesis reports, generated RTL) |
