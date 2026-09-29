@@ -34,13 +34,10 @@ vitis_hls -f run_hls.tcl
 
 For a quick functional check without launching Vitis, compile the C simulation with g++. Point `INC` at the Vitis HLS `include` directory:
 
-```bash
-INC=<Vitis_HLS install path>/include
-g++ -O2 -std=c++14 -I"$INC" my_window.cpp my_window_tb.cpp -o csim.exe
-./csim.exe
-```
-
-The pass criterion is `partition_match` (identical cluster partition). `exact_match` will show FAIL because the hardware and the golden files number the clusters differently; this is expected. The output should end with `ALL EVENTS PASS (partition_match)`.
+pass criterion is `partition_match` (identical cluster partition).
+`exact_match` will show FAIL because the hardware and the golden files
+number the clusters differently; this is expected. The output should
+end with `ALL EVENTS PASS (partition_match)`.
 
 The testbench reads `data/emb_event*.dat` and `data/golden_event*.dat` relative to the current directory and writes `data/labels_event*.dat`, so run it from this directory.
 
