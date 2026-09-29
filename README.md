@@ -32,9 +32,7 @@ Load the Vitis HLS 2023.2 environment first (`source <Vitis_HLS install path>/se
 vitis_hls -f run_hls.tcl
 ```
 
-For a quick functional check without launching Vitis, compile the C simulation with g++. Point `INC` at the Vitis HLS `include` directory:
-
-pass criterion is `partition_match` (identical cluster partition).
+Pass criterion is `partition_match` (identical cluster partition).
 `exact_match` will show FAIL because the hardware and the golden files
 number the clusters differently; this is expected. The output should
 end with `ALL EVENTS PASS (partition_match)`.
